@@ -457,3 +457,31 @@ footer {
  margin-left: 20px;
  
 }
+
+.game-controller {
+  position: absolute;
+  bottom: -100px; 
+  left: 50%;
+  transform: translateX(-50%);
+  animation: drop 2s cubic-bezier(0.68, -0.55, 0.27, 1.55) infinite;
+}
+
+#controller1 {
+  animation-delay: 0s; /* Sem atraso para o primeiro controlador */
+}
+
+#controller2 {
+  animation-delay: 1s; /* 1 segundo de atraso para o segundo controlador */
+}
+
+@keyframes drop {
+  0% {
+    transform: translateX(-50%) translateY(-100px);
+  }
+  50% {
+    transform: translateX(-50%) translateY(0);
+  }
+  100% {
+    transform: translateX(-50%) translateY(-100px);
+  }
+}
