@@ -72,12 +72,13 @@ section p {
   max-width: 100%;
 }
 
-/* Estilos das mídias sociais */
+
 .social img {
   height: 24px;
+  margin-left: 20px;
 }
 
-/* Estilos do formulário de contato */
+
 #contact {
   display: block;
 }
@@ -438,4 +439,13 @@ footer {
   text-align: center;
   margin-top: 5%;
   margin-left: 135%;
+}
+
+.midia{
+ display: flex;
+ justify-content: center;
+ margin-top: 20px;
+ margin-right: 50px;
+ margin-left: 20px;
+ 
 }
